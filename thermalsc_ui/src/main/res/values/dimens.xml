@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="row">32dp</dimen>
+    <dimen name="scroll">128dp</dimen>
+    <dimen name="first_column">200dp</dimen>
+</resources>

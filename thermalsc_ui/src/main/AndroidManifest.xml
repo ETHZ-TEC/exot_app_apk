@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ch.ethz.karajan.thermalsc">
+    
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN"  tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"  tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"  tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"  tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".UIactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- The service runs in a separate process than the activity. -->
+        <service
+            android:name=".MeterService"
+            android:process=":MeterService"
+            android:exported="false"
+            android:enabled="true"
+            android:isolatedProcess="false"
+            android:stopWithTask="false" />
+    </application>
+</manifest>
