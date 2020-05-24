@@ -29,8 +29,8 @@
 #!/bin/bash
 
 # CHANGE THESE FOR YOUR APPa
-app_package="org.eth.tik.meter"
-dir_app_name="DLEmeter"
+app_package="ch.ethz.exot.thermalsc"
+dir_app_name="ThermalSCmeter"
 MAIN_ACTIVITY="MainActivity"
 
 ADB="adb" # how you execute adb

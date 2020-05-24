@@ -26,4 +26,12 @@
 // OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // 
-include ':libnative', ':libjava', ':intentproxy', ':thermalsc', ':thermalscui'
+package ch.ethz.exot.thermalsc;
+
+import ch.ethz.exot.lib.BaseService;
+
+public class MeterService extends BaseService {
+    static {
+        System.loadLibrary("exot-jni-thermalsc");
+    }
+}

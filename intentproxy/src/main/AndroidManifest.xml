@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.ethz.exot.intentproxy">
+
+    <application>
+        <service
+            android:name=".IntentProxyService"
+            android:process=":IntentProxyService"
+            android:exported="true"
+            android:enabled="true"
+            android:isolatedProcess="false"
+            android:stopWithTask="false" />
+    </application>
+</manifest>

@@ -1,3 +1,3 @@
-[submodule "lib/src/covert"]
-	path = lib/src/covert
+[submodule "libnative/src/exot-c++"]
+	path = libnative/src/exot-c++
 	url = git@gitlab.ethz.ch:tec/public/exot/app_lib.git
