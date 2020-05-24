@@ -1,3 +1,3 @@
 [submodule "lib/src/covert"]
 	path = lib/src/covert
-	url = git@gitlab.ethz.ch:tec/research/karajan/app_lib.git
+	url = git@gitlab.ethz.ch:tec/public/exot/app_lib.git

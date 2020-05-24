@@ -14,8 +14,6 @@ And to install on connected devices, run:
 ./gradlew --parallel --warn installDebug
 ```
 
-The compiled and packaged applications are available in the [project's tags](https://gitlab.ethz.ch/klopottb/android/tags).
-
 ### Caveats
 
 Although the preferred C++ standard library for Android, the libc++, has support for C++17, the CMake binary bundled with the Android SDK is quite old, and only supports setting the standard up to C++14. Some changes have been applied to have the application compile correctly with Gradle.
